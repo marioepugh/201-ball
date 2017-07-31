@@ -1,14 +1,14 @@
-
-
-
-
-
-
 /**********
 ***ABOUT***
 **********/
 
 #team {
+  max-width: 960px;
+  margin: 30px auto;
+}
 
-  
+#team li {
+  outline: 1px dashed red;
+  display: inline-block;
+  width: 50%;
 }
