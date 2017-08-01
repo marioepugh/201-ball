@@ -32,6 +32,8 @@ function twoOptions() {
     new MakeContent(text[i], 'twoOptionId', button[i], 'Select').render();
     i++;
   }
+  ulEl.removeEventListener('click', select);
+  ulEl.addEventListener('click', handleClick);
 };
 twoOptions();
 
@@ -74,11 +76,11 @@ function createButton() {
     button.textContent = 'Back';
 };
 
-// function removeButton() {
-//   var buttonContainer = document.getElementById('backButton');
-//   var button = document.getElementById('back');
-//   buttonContainer.removeChild(button);
-// };
+function removeButton() {
+  var buttonContainer = document.getElementById('backButton');
+  var button = document.getElementById('back');
+  buttonContainer.removeChild(button);
+};
 
 //event handler for user secelecting options
 function select(e) {
@@ -116,9 +118,9 @@ function handleClick(e) {
 function handleBackButton(e) {
   if (event.target.id === 'back') {
     console.log('back button from button');
-    // ulEl.innerHTML = ' ';
-    // twoOptions();
-    // removeButton();
+    ulEl.innerHTML = ' ';
+    twoOptions();
+    removeButton();
   }
 };
 
