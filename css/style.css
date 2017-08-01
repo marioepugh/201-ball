@@ -125,6 +125,7 @@ header {
 header img {
   float: left;
   padding-top: 10px;
+  padding-left: 150px;
   width: 130px;
   height: 130px;
 }
@@ -132,6 +133,7 @@ header img {
 .header-title {
   text-align: center;
   padding-top: 30px;
+  padding-right: 200px;
   font-size: 50px;
 }
 
