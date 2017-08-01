@@ -56,6 +56,9 @@ function threeOptionsLeft() {
     new MakeContent(text[i], 'threeOptionId', button[i], 'Select').render();
     i++;
   }
+  if (i = 2) {
+    createButton();
+  }
   ulEl.removeEventListener('click', handleClick);
   ulEl.addEventListener('click', select);
 };
@@ -64,17 +67,18 @@ function threeOptionsLeft() {
 var buttonContainer = document.getElementById('backButton');
 
 function createButton() {
-  if (!button) {
     console.log('no button');
     var button = document.createElement('button');
     buttonContainer.appendChild(button);
     button.id = 'back';
     button.textContent = 'Back';
-  } else {
-    buttonContainer.remove(button);
-  }
-
 };
+
+// function removeButton() {
+//   var buttonContainer = document.getElementById('backButton');
+//   var button = document.getElementById('back');
+//   buttonContainer.removeChild(button);
+// };
 
 //event handler for user secelecting options
 function select(e) {
@@ -110,12 +114,11 @@ function handleClick(e) {
 };
 
 function handleBackButton(e) {
-  console.log(event.target.id);
   if (event.target.id === 'back') {
     console.log('back button from button');
-    ulEl.innerHTML = ' ';
-    twoOptions();
-
+    // ulEl.innerHTML = ' ';
+    // twoOptions();
+    // removeButton();
   }
 };
 
