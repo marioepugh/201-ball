@@ -1,6 +1,24 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
 /**********
 ***ABOUT***
 **********/
+header section{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1{
+  margin-top: 10px;
+  font-size: 2.3em;
+  text-align: center;
+
+}
+
+header p{
+  margin: 20px;
+}
 
 #team {
   max-width: 960px;
@@ -8,7 +26,35 @@
 }
 
 #team li {
-  outline: 1px dashed red;
   display: inline-block;
-  width: 50%;
+  width: 40%;
+  margin: 4.8%;
+}
+
+#team li:last-child {
+  margin-right: 0;
+}
+
+#team img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+#team p {
+  line-height: 1.5em;
+  text-indent: 20px;
+}
+
+.teamMember {
+  text-align: center;
+  text-indent: 0px;
+  margin: 10px;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 550px) {
+  #team li {
+    width: 90%;
+    margin: 4.8%;
+  }
 }
