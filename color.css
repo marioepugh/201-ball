@@ -1,0 +1,39 @@
+#red {
+  background: linear-gradient(to bottom right, #ff0000 0%, #800000 100%);
+}
+
+#orange {
+  background: linear-gradient(to bottom right, #ffa500 0%, #993300 100%);
+}
+
+#yellow {
+  background: linear-gradient(to bottom right, #ffff00 0%, #ff9900 100%);
+}
+
+#lime {
+  background: linear-gradient(to bottom right, #00ff00 0%, #336600 100%);
+}
+
+#green {
+  background: linear-gradient(to bottom right, #009900 0%, #003300 100%);
+}
+
+#aquamarine {
+  background: linear-gradient(to bottom right, #7fffd4 0%, #006666 100%);
+}
+
+#blue {
+  background: linear-gradient(to bottom right, #0000ff 0%, #000066 100%);
+}
+
+#purple {
+  background: linear-gradient(to bottom right, #800080 0%, #330033 100%);
+}
+
+#pink {
+  background: linear-gradient(to bottom right, #ffc0cb 0%, #ff0066 100%);
+}
+
+#gray {
+  background: linear-gradient(to bottom right, #808080 0%, #262626 100%);
+}
