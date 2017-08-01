@@ -1,6 +1,6 @@
-/** {
+* {
   font-family: 'Orbitron', sans-serif;
-}*/
+}
 
 #red {
   background: linear-gradient(to bottom right, #ff0000 0%, #800000 100%);
@@ -40,4 +40,25 @@
 
 #gray {
   background: linear-gradient(to bottom right, #808080 0%, #262626 100%);
+}
+
+.ball {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  color: black;
+  background: white;
+  top: 30%;
+  left: 30%;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  
 }
