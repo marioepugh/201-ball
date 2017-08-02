@@ -16,7 +16,17 @@ var ball = {
       'HTML paragraphs use <p> tag',
       'HTML link: <a> tag, the link\'s destination href attribute. ',
       'HTML images use the <img> tag',
-      'HTML headings: <h1> to <h6> tags',
+      '.class is for elements with a \'class\'',
+      '#id is for elements with an \'id\'',
+      'HTML stands for Hyper Text Markup Language',
+      'HTML elements are represented by tags',
+      'First tag: start tag, second tag: end tag',
+      'fonts.google.com',
+      '',
+      '',
+      '',
+      '',
+      'HTML headings: <h1> to <h6> tags'
     ],
     css: [
       'Are you closing your elements',
@@ -32,6 +42,11 @@ var ball = {
       'External style sheet: link goes in the <head>',
       'CSS color property:  the text color to be used',
       'CSS font-family: the font to be used',
+      'Margin, border, padding, content',
+      'Selectors indicate which element the rule applies to',
+      'Properties indicate aspects of the element you want to change',
+      'Values specify settings you want to use for the chosen properties',
+      'Declarations indicate how elements are referred to in selector should be styled',
       'CSS font-size: the text size to be used'
     ],
     js: [
@@ -45,6 +60,15 @@ var ball = {
       'Global variables are defined outside a function',
       'Local variables are defined within a function',
       'Function parameters are always local to that function',
+      'Don\'t forget your semicolon',
+      'All JavaScript values, except primitives, are objects',
+      'JavaScript methods are actions that can be performed on objects',
+      'A JavaScript method is a property containing a function definition',
+      'Methods are actions that can be perfomed on objects',
+      'Methods are stored in properties as function definitions',
+      'You define (and create) JavaScript objects with an object literal',
+      'Math.round(x) returns the value of x rounded to its nearest integer',
+      'A method is a function definition stored as a property value',
       '4 + 5: The ‘+’ is called the operator'
     ],
     motivational: [
@@ -55,6 +79,8 @@ var ball = {
       'Has it been 15 mins already?',
       'Go to YouTube channel, watch the video',
       'Rubber ducky',
+      'Walk around the block',
+      'Yes, the pace is fast for everybody',
       'Trust the process',
       'It usually clicks for most in 301',
       'It will all make sense later',
@@ -62,6 +88,9 @@ var ball = {
       'ACP',
       'Check your spelling',
       'Let\'s see what\'s broken on your code',
+      'Check the googles',
+      'Read the docs',
+      'Programming is 10% writing code, 90% fixing your bugs',
       'A stacked learning style is meant to be challenging'
     ],
     traditional: [
