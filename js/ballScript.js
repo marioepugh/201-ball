@@ -4,7 +4,7 @@ var ballContainer = document.getElementById('ballOuter');
 var ballContent = document.getElementById('ballContent');
 
 var answers = ball.answers;
-var picked = ['traditional'];
+var picked = ['traditional', 'js'];
 var filtered = [];
 
 picked.forEach(function(item) {
