@@ -1,96 +1,37 @@
-body {
-  font-family: Helvetica, sans-serif;
-}
-
-main {
-  margin: 0px auto;
-  width: 960px;
-}
-
-/**********
-***HEADER***
-**********/
-
-/*header {
-  border: 5px dotted orange;
-}
-
-header img {
-  border: 5px dotted orange;
-}
-
 header h1 {
-  border: 5px dotted orange;
-}
-
-header h2 {
-  border: 5px dotted orange;
-}*/
-
-header {
-  background: #444;
-  height: 150px;
-  color: white;
-}
-
-.header-content {
-  width: 960px;
-  margin: 0px auto;
-}
-
-header img {
-  float: left;
-  padding-top: 10px;
-  padding-left: 150px;
-  width: 130px;
-  height: 130px;
-}
-
-.header-title {
   text-align: center;
-  padding-top: 30px;
-  padding-right: 200px;
   font-size: 50px;
-}
-
-.header-content h2 {
-  font-size: 20px;
-}
-
-/**********
-***FOOTER***
-**********/
-
-footer {
-  clear: both;
-  background: #444;
-  height: 150px;
+  font-family: 'Press Start 2P', cursive;
   margin-top: 50px;
 }
 
-/**********
-***INDEX MAIN***
-**********/
-
-.index {
+main {
   text-align: center;
   margin: 0px auto;
-  width: 960px;
+  width: 900px;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 30px;
 }
 
-.index img {
+main img {
   width: 500px;
-  height: 500px;
+  height: 400px;
+  margin-bottom: 30px;
 }
-
-/**********
-***FORM MAIN***
-**********/
 
 form {
-  padding: 30px;
+  padding: 50px;
 }
 
-/**********
-***FORM MAIN***
-**********/
+.username {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Press Start 2P', cursive;
+  margin-right: 100px;
+}
+
+.start {
+  font-size: 50px;
+  margin-top: 50px;
+  font-family: 'Press Start 2P', cursive;
+}
