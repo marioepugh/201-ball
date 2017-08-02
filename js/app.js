@@ -1,3 +1,3 @@
 'use strict';
 
-console.log(ball.answers.js);
+// console.log(ball.answers.js);
