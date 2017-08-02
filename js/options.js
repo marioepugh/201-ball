@@ -2,7 +2,12 @@
 
 //get list container and array to store user choices
 var ulEl = document.getElementById('listContainer');
+var buttonContainer = document.getElementById('backAndSubmitButtons');
 var userSelected = [];
+var textMood = ['<span>Mood 1</span> </br> I am mood 1', '<span>Mood 2</span> </br> I am mood 2', '<span>Mood 3</span> </br> I am mood 3'];
+var buttonMood = ['left', 'center', 'right'];
+var textQuestion = ['<span>HTML</span> </br> Help with HTML', '<span>CSS</span> </br> Help with CSS', '<span>Javascript</span> </br> Help with Javascript'];
+var buttonQuestion = ['html', 'css', 'javascript'];
 
 var MakeContent = function(liText, liIdName, buttonId, buttonName) {
   this.liText = liText;
@@ -14,7 +19,7 @@ var MakeContent = function(liText, liIdName, buttonId, buttonName) {
 //object constructor for user choices
 MakeContent.prototype.render = function() {
   var liEl = document.createElement('li');
-  liEl.textContent = this.liText;
+  liEl.innerHTML = this.liText;
   liEl.id = this.liIdName;
   var button = document.createElement('button');
   liEl.appendChild(button);
@@ -25,7 +30,7 @@ MakeContent.prototype.render = function() {
 
 //function to display two options
 function twoOptions() {
-  var text = ['Do you need answers to your questions?', 'Do you need mental support or motivation?'];
+  var text = ['<span>answers</span> </br> Do you need answers to your questions?', '<span>motovation</span> </br> Do you need mental support or motovation?'];
   var button = ['left', 'right'];
   var i = 0;
   while (i < 2) {
@@ -38,91 +43,88 @@ function twoOptions() {
 twoOptions();
 
 //functions to display three choices
-function threeOptionsRight() {
-  var text = ['Mood 1', 'Mood 2', 'Mood 3'];
-  var button = ['left', 'center', 'right'];
+function threeOptions(innerText, buttonId) {
   var i = 0;
   while (i < 3) {
-    new MakeContent(text[i], 'threeOptionId', button[i], 'Select').render();
+    new MakeContent(innerText[i], 'threeOptionId', buttonId[i], 'Select').render();
     i++;
   }
-  ulEl.removeEventListener('click', handleClick);
-  ulEl.addEventListener('click', select);
-};
-
-function threeOptionsLeft() {
-  var text = ['HTML', 'CSS', 'Javascript'];
-  var button = ['html', 'css', 'javascript'];
-  var i = 0;
-  while (i < 3) {
-    new MakeContent(text[i], 'threeOptionId', button[i], 'Select').render();
-    i++;
-  }
-  if (i = 2) {
-    createButton();
-  }
+  createButton();
   ulEl.removeEventListener('click', handleClick);
   ulEl.addEventListener('click', select);
 };
 
 //function to create button to go back to first option display
-var buttonContainer = document.getElementById('backButton');
-
 function createButton() {
     console.log('no button');
     var button = document.createElement('button');
     buttonContainer.appendChild(button);
     button.id = 'back';
     button.textContent = 'Back';
+    button = document.createElement('button');
+    buttonContainer.appendChild(button);
+    button.id = 'submit';
+    button.textContent = 'submit';
 };
 
 function removeButton() {
-  var buttonContainer = document.getElementById('backButton');
+  var buttonContainer = document.getElementById('backAndSubmitButtons');
   var button = document.getElementById('back');
+  var submitButton = document.getElementById('submit');
   buttonContainer.removeChild(button);
+  buttonContainer.removeChild(submitButton);
+};
+
+//event handler waiting for clicks on first two options
+function handleClick(e) {
+  console.log(event.target.id);
+  if (event.target.id === 'right') {
+    console.log('clicked');
+    ulEl.innerHTML = ' ';
+    threeOptions(textMood, buttonMood);
+  } else if (event.target.id === 'left') {
+    ulEl.innerHTML = ' ';
+    threeOptions(textQuestion, buttonQuestion);
+  }
 };
 
 //event handler for user secelecting options
+//pushes choices to array
 function select(e) {
   if (event.target.id !== null) {
     event.target.classList.toggle('select');
     if (event.target.classList.length !== 0) {
       userSelected.push(event.target.id);
       console.log(event.target.id + ' is active');
+      event.target.textContent = 'Unselect';
     } else {
       for (var i = 0; i < userSelected.length; i++) {
         if (userSelected[i] === event.target.id) {
           console.log(event.target.id + ' is inactive');
           userSelected.splice(i, 1);
+          event.target.textContent = 'Select';
         }
       }
     }
   }
 };
 
-//event handler waiting for clicks
-function handleClick(e) {
-  console.log(event.target.id);
-  if (event.target.id === 'right') {
-    console.log('clicked');
-    ulEl.innerHTML = ' ';
-    threeOptionsRight();
-    createButton();
-  } else if (event.target.id === 'left') {
-    ulEl.innerHTML = ' ';
-    threeOptionsLeft();
-    createButton();
-  }
-};
-
-function handleBackButton(e) {
+//event handler for back button
+function handleBackAndSubmitButtons(e) {
   if (event.target.id === 'back') {
     console.log('back button from button');
+    localStorage.clear();
     ulEl.innerHTML = ' ';
+    userSelected = [];
     twoOptions();
     removeButton();
+  } else if (event.target.id === 'submit') {
+    console.log('submit');
+
+localStorage.storedUserSelected = JSON.stringify(userSelected);
+location.href = "color.html";
   }
 };
 
 ulEl.addEventListener('click', handleClick);
-buttonContainer.addEventListener('click', handleBackButton);
+buttonContainer.addEventListener('click', handleBackAndSubmitButtons);
