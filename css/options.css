@@ -1,0 +1,71 @@
+#listConatiner {
+  width: 900px;
+  height: 300px;
+  margin: auto;
+  display: block;
+}
+
+#backAndSubmitButtons {
+  width: 880px;
+  height: 50px;
+  content: " ";
+  clear: both;
+  display: block;
+  padding: 10px;
+}
+
+li {
+  height: 300px;
+  display: inline-block;
+  border: black solid 2px;
+  border-radius: 10%;
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+#twoOptionId {
+  width: 400px;
+  margin: 0 18px;
+}
+
+span {
+  color: blue;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+#threeOptionId {
+  width: 250px;
+  margin: 0 20px;
+}
+
+ul {
+  display: inline;
+}
+
+button {
+  display: block;
+  margin: auto;
+width: 150px;
+}
+
+li button {
+  color: blue;
+  position: relative;
+  top: 200px;
+
+}
+
+.select {
+  background: red;
+}
+
+#back {
+  float: left;
+}
+
+#submit {
+  float: right;
+}
