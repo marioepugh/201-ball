@@ -47,6 +47,7 @@ var ball = {
       'Properties indicate aspects of the element you want to change',
       'Values specify settings you want to use for the chosen properties',
       'Declarations indicate how elements are referred to in selector should be styled',
+      'Fixed positioning stays in place when page is scrolled',
       'CSS font-size: the text size to be used'
     ],
     js: [
