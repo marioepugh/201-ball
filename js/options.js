@@ -30,7 +30,7 @@ MakeContent.prototype.render = function() {
 
 //function to display two options
 function twoOptions() {
-  var text = ['<span>answers</span> </br> Do you need answers to your questions?', '<span>motovation</span> </br> Do you need mental support or motovation?'];
+  var text = ['<span>answers</span> </br> Do you need answers to your questions?</br> HTML, CSS or JavaScript got you down?', '<span>motovation</span> </br> Feeling overwhelmed?</br> Do you need mental support or motovation?'];
   var button = ['left', 'right'];
   var i = 0;
   while (i < 2) {
