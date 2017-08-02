@@ -1,5 +1,8 @@
+'use strict';
+
 var ballContainer = document.getElementById('ballOuter');
 var ballContent = document.getElementById('ballContent');
+
 
 var answers = ball.answers.html;
 
@@ -10,8 +13,9 @@ var randomNumber = function(num) {
 
 var changeQuote = function() {
   ballContent.textContent = answers[randomNumber(answers.length)];
-}
+
+};
 
 changeQuote();
 
-ballContainer.addEventListener('click', changeQuote());
+ballContainer.addEventListener('mouseover', changeQuote);

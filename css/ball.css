@@ -9,6 +9,7 @@
   height: 500px;
   border-radius: 100%;
   background: #000;
+  z-index: 1;
 }
 
 #ballOuter:hover {
@@ -60,4 +61,13 @@
   line-height: 1.4em;
   /*outline: 1px dashed red;*/
   color: #eef;
+  z-index: 2;
+}
+
+#ballCover {
+  width: 100%;
+  height: 100%;
+  background: red;
+  z-index: 50;
+  border-radius: 100%
 }
