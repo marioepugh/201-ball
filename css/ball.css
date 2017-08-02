@@ -8,12 +8,11 @@
   width: 500px;
   height: 500px;
   border-radius: 100%;
-  background: #000;
+  background: red; 
   z-index: 1;
 }
 
 #ballOuter:hover {
-  background: #333;
   animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
@@ -44,7 +43,8 @@
   border-radius: 100%;
   display: flex;
   justify-content: center;
-  border: 1px solid white;
+  border: 5px solid #333;
+  box-sizing: border-box;
   align-items: center;
   background: url('../img/magicBallInside.jpg') #000;
   background-repeat: no-repeat;
@@ -70,4 +70,12 @@
   background: red;
   z-index: 50;
   border-radius: 100%
+}
+
+#ballFilter {
+box-sizing: border-box;
+/*border: 1px solid red;*/
+width: 500px;
+height: 500px;
+background-image: url('../img/ballFilter.png');
 }
