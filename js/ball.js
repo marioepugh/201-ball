@@ -22,10 +22,10 @@ var ball = {
       'HTML elements are represented by tags',
       'First tag: start tag, second tag: end tag',
       'fonts.google.com',
-      '',
-      '',
-      '',
-      '',
+      'Line break <br/>',
+      '<center>Centering</center>',
+      '<ol><li>Ordered List</li></ol>',
+      '<ul><li>Unordered List</li></ol>',
       'HTML headings: <h1> to <h6> tags'
     ],
     css: [
