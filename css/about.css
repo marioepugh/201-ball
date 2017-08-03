@@ -1,8 +1,37 @@
 /**********
 ***ABOUT***
 **********/
-*{
-  outline: 1px dashed red
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+* {
+  /*outline: 1px dashed red*/
+  color: white;
+}
+
+body {
+  background-image: url('../img/bg2.jpg');
+}
+
+.button {
+  margin-top: 50px;
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  /*font-family: 'Bungee Shade', cursive;*/
+  background-color: #B73509;
+  border: none;
+  color: white;
+  padding: 30px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 350ms all;
+}
+
+.button:hover {
+  background: #C7A943;
 }
 
 header section {
@@ -16,7 +45,7 @@ h1 {
   text-align: center;
 }
 
-header p {
+header a {
   margin: 20px;
 }
 
