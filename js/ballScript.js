@@ -14,7 +14,7 @@ var picked = JSON.parse(localStorage.storedUserSelected);
 var filtered = [];
 var userName = JSON.parse(localStorage.storedUserName);
 var optionSelected = '';
-var ballColor = 'green';
+var ballColor = JSON.parse(localStorage.userColor);
 
 
 picked.forEach(function(item) {
