@@ -5,7 +5,7 @@ var ulEl = document.getElementById('listContainer');
 var buttonContainer = document.getElementById('backAndSubmitButtons');
 var userSelected = [];
 var textMood = ['<span class="threeSpan">Motivation</span> <br /> Get some motivation', '<span class="threeSpan">Mood 2</span> <br /> mood 2', '<span class="threeSpan">Traditional</span> <br /> Traditional 8 Ball yes or no answers'];
-var buttonMood = ['left', 'center', 'right'];
+var buttonMood = ['motivational', 'center', 'traditional'];
 var textQuestion = ['<span class="threeSpan">HTML</span> <br /> Help with HTML', '<span class="threeSpan">CSS</span> <br /> Help with CSS', '<span class="threeSpan">Javascript</span> <br /> Help with Javascript'];
 var buttonQuestion = ['html', 'css', 'javascript'];
 

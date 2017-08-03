@@ -1,8 +1,5 @@
 'use strict';
 
-
-
-
 var ballContainer = document.getElementById('ballOuter');
 var ballContent = document.getElementById('ballContent');
 var finalGreetingP = document.getElementById('finalGreeting');
@@ -28,6 +25,11 @@ var combinedAnswers = filtered.reduce(function(a, b) {
 
 
 for (var i = 0; i < picked.length; i++) {
+  if(picked.length === 1) {
+    optionSelected += picked[i];
+    break;
+  }
+
   if (i === picked.length - 1) {
     optionSelected += ' and ' + picked[i];
   } else {
