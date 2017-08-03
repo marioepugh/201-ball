@@ -21,11 +21,11 @@ main h2 {
 
 body {
   /*background-color: #FFFBCC;*/
-  background-image: url('../img/bg1.jpg');
-  background-position: center;
+  background-image: url('../img/bg2.jpg');
+  /*background-position: center;
   background-repeat: no-repeat;
   background-origin: content-box;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 header {
@@ -90,7 +90,7 @@ form {
   background: rgba(255,255,255,.2);
   padding:5px;
   border: none;
-  border-bottom: 5px dashed red;
+  /*border-bottom: 5px dashed red;*/
   text-align: center;
 }
 
