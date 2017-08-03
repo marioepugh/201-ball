@@ -68,6 +68,7 @@ main {
   border-radius: 100%;
   background: #000;
   z-index: 1;
+  margin-top: 30px;
 }
 
 #ballOuter:hover {
