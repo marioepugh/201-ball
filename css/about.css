@@ -1,6 +1,9 @@
 /**********
 ***ABOUT***
 **********/
+*{
+  outline: 1px dashed red
+}
 
 header section {
   max-width: 960px;
@@ -24,8 +27,9 @@ header p {
 
 #team li {
   display: inline-block;
+  /*float: left;*/
   width: 40%;
-  margin: 4.8%;
+  margin: 4.0%;
 }
 
 #team li:last-child {
