@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
 * {
-  /*font-family: 'Orbitron', sans-serif;*/
+  font-family: 'Press Start 2P', cursive;
   outline: 1px dashed red;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Press+Start+2P');
+body {
+  /*width: 100%;*/
+}
+
 
 #red {
   background: linear-gradient(to bottom right, #ff0000 0%, #800000 100%);
@@ -83,7 +88,7 @@
 ul li {
   display: inline-block;
   padding: 30px;
-  width: auto;
+  /*width: auto;*/
   text-align: center;
   cursor: pointer;
   border: 3px solid white;
@@ -129,6 +134,7 @@ body {
 header {
   width: 960px;
   margin: 0 auto;
+  /*background: green;*/
 }
 
 header img {
@@ -153,6 +159,6 @@ main {
   text-align: center;
   margin: 0px auto;
   width: 900px;
-  font-family: 'Bungee Shade', cursive;
+  /*font-family: 'Bungee Shade', cursive;*/
   margin-top: 30px;
 }
