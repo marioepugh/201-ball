@@ -1,8 +1,5 @@
 'use strict';
 
-
-
-
 var ballContainer = document.getElementById('ballOuter');
 var ballContent = document.getElementById('ballContent');
 var finalGreetingP = document.getElementById('finalGreeting');
@@ -10,12 +7,29 @@ var finalGreetingP = document.getElementById('finalGreeting');
 
 
 var answers = ball.answers;
-var picked = JSON.parse(localStorage.storedUserSelected);
+// var picked = JSON.parse(localStorage.storedUserSelected);
 var filtered = [];
-var userName = JSON.parse(localStorage.storedUserName);
+// var userName = JSON.parse(localStorage.storedUserName);
 var optionSelected = '';
-var ballColor = JSON.parse(localStorage.userColor);
+// var ballColor = JSON.parse(localStorage.userColor);
 
+if (localStorage.storedUserSelected) {
+  var picked = JSON.parse(localStorage.storedUserSelected);
+} else {
+  picked = 'motivational';
+}
+
+if (localStorage.storedUserName) {
+  var userName = JSON.parse(localStorage.storedUserName);
+} else {
+  userName = '';
+}
+
+if (localStorage.userColor) {
+  var ballColor = JSON.parse(localStorage.userColor);
+} else {
+  ballColor = 'gray';
+}
 
 picked.forEach(function(item) {
   filtered.push(answers[item]);
@@ -28,6 +42,11 @@ var combinedAnswers = filtered.reduce(function(a, b) {
 
 
 for (var i = 0; i < picked.length; i++) {
+  if (picked.length === 1) {
+    optionSelected += picked[i];
+    break;
+  }
+
   if (i === picked.length - 1) {
     optionSelected += ' and ' + picked[i];
   } else {

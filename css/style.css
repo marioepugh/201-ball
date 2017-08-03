@@ -7,11 +7,12 @@ header {
 
 footer {
   clear: both;
-  background: #514415;
+  background: #f44;  
   height:30px;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
   text-align: center;
+  margin-top: 30px;
 }

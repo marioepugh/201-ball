@@ -1,6 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
 /*********
 ***BAll***
 **********/
+
+* {
+  /*outline: 2px dashed red;*/
+}
+
+body {
+  background-image: url('../img/bg2.jpg');
+  color: #fff;
+}
+
+header {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header img {
+  float: left;
+  display: block;
+  width: 100px;
+  padding: 20px;
+}
+
+header h1 {
+  /*float: left;*/
+  /*display: inline-block;*/
+  padding-top: 60px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  text-shadow: 3px 3px #f00;
+}
+
+main {
+  text-align: center;
+  margin: 0px auto;
+  width: 900px;
+  /*font-family: 'Bungee Shade', cursive;*/
+  margin-top: 30px;
+}
+
+/*main img {
+  width: 500px;
+  margin-bottom: 30px;
+}*/
+
+#finalGreeting {
+  /*font-family: 'Monoton', cursive;*/
+  /*font-family: 'Open Sans', sans-serif;*/
+  font-family: monospace;
+  font-size: 30px;
+  letter-spacing: 5px;
+  line-height: 1.5em;
+  color: #fff;
+  text-shadow: 3px 3px #f00;
+}
 
 #ballOuter {
   margin: 0 auto;
@@ -10,6 +68,7 @@
   border-radius: 100%;
   background: #000;
   z-index: 1;
+  margin-top: 30px;
 }
 
 #ballOuter:hover {
