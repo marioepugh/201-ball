@@ -23,9 +23,9 @@ var ball = {
       'First tag: start tag, second tag: end tag',
       'fonts.google.com',
       'Line break <br/>',
-      '<center>Centering</center>',
-      '<ol><li>Ordered List</li></ol>',
-      '<ul><li>Unordered List</li></ol>',
+      '<center> Centering </center>',
+      '<ol><li> Ordered List </li></ol>',
+      '<ul><li> Unordered List </li></ol>',
       'HTML headings: <h1> to <h6> tags'
     ],
     css: [
@@ -116,6 +116,25 @@ var ball = {
       'Outlook not so good',
       'Very doubtful'
     ],
+    jokes: [
+      'Real programmers count from 0',
+      'What do you call it when a programmer throws up at IHOP? A stack overflow.',
+      'Chuck Norris doesn\’t use web standards as the web will conform to him.',
+      'There’s no place like 127.0.0.1',
+      'Why do programmers confuse Halloween with Christmas? Because OCT 31 = DEC 25.',
+      'Chuck Norris writes code that optimizes itself.',
+      'What is the most used language in programming? Profanity.',
+      'Hardware. The part of the computer you can kick.',
+      'How many programmers to change a light bulb? None It\’s a hardware problem.',
+      'What did the Java code say to the C code? You\'ve got no class.',
+      'When Chuck Norris throws exceptions, it\’s across the room.',
+      'Why do Java programmers have to wear glasses? They don\'t C#.',
+      'Whats the object-oriented way to become wealthy? Inheritance',
+      'How do you comfort a JavaScript bug? You console it',
+      'Why did the developer go broke? Because he used up all his cache',
+      'Why did the C# developer fall asleep? Because he didn’t like Java.',
+      'Why did the programmer quit his job? He didn\'t get arrays.'
+    ],
     recommendations: [
       'Take a break',
       'Struggling? Take a break',
@@ -140,6 +159,9 @@ var ball = {
       'Use online resources',
       'Reduce complexity to simplicity',
       'Remove any code that isn\'t being used',
+      'Try meditation',
+      'Yoga',
+      'Get some sleep tonight',
       'Don\'t repeat yourself'
     ]
   }
