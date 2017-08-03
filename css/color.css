@@ -1,6 +1,9 @@
 * {
-  font-family: 'Orbitron', sans-serif;
+  /*font-family: 'Orbitron', sans-serif;*/
+  outline: 1px dashed red;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Press+Start+2P');
 
 #red {
   background: linear-gradient(to bottom right, #ff0000 0%, #800000 100%);
@@ -46,11 +49,16 @@
   background: linear-gradient(to bottom right, #000000 0%, #262626 100%);
 }
 
+#white {
+  background: linear-gradient(to bottom right, #fff 0%, #888 100%);
+}
+
 .ball {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   position: relative;
+  float: right;
 }
 
 .logo {
@@ -59,22 +67,92 @@
   background: white;
   top: 30%;
   left: 30%;
-  width: 75px;
-  height: 75px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
 }
 
-ul {
-  width: 100%;
-  display: table;
-  table-layout: fixed;
+#colorContainer {
+  float: left;
+  width: 200px;
+  margin-left: 50px;
 }
 
 ul li {
   display: inline-block;
-  padding: 30px 40px;
+  padding: 30px;
   width: auto;
   text-align: center;
+  cursor: pointer;
+  border: 3px solid white;
+  margin: 3px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.button {
+  margin-top: 50px;
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  /*font-family: 'Bungee Shade', cursive;*/
+  background-color: #B73509;
+  border: none;
+  color: white;
+  padding: 30px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 350ms all;
+}
+
+.button:hover {
+  background: #C7A943;
+}
+
+
+body {
+  /*background-color: #FFFBCC;*/
+  background-image: url('../img/bg2.jpg');
+  /*background-position: center;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: cover;*/
+}
+
+header {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header img {
+  float: left;
+  display: block;
+  width: 100px;
+  padding: 20px;
+}
+
+header h1 {
+  /*float: left;*/
+  /*display: inline-block;*/
+  padding-top: 60px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  text-shadow: 3px 3px #f00;
+}
+
+main {
+  text-align: center;
+  margin: 0px auto;
+  width: 900px;
+  font-family: 'Bungee Shade', cursive;
+  margin-top: 30px;
 }
