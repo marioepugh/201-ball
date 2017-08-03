@@ -4,9 +4,9 @@
 var ulEl = document.getElementById('listContainer');
 var buttonContainer = document.getElementById('backAndSubmitButtons');
 var userSelected = [];
-var textMood = ['<span>Motivation</span> </br> Get some motivation', '<span>Mood 2</span> </br> I am mood 2', '<span>Traditional</span> </br> Traditional 8 Ball yes or no answers'];
+var textMood = ['<span class="threeSpan">Motivation</span> <br /> Get some motivation', '<span class="threeSpan">Mood 2</span> <br /> mood 2', '<span class="threeSpan">Traditional</span> <br /> Traditional 8 Ball yes or no answers'];
 var buttonMood = ['left', 'center', 'right'];
-var textQuestion = ['<span>HTML</span> </br> Help with HTML', '<span>CSS</span> </br> Help with CSS', '<span>Javascript</span> </br> Help with Javascript'];
+var textQuestion = ['<span class="threeSpan">HTML</span> <br /> Help with HTML', '<span class="threeSpan">CSS</span> <br /> Help with CSS', '<span class="threeSpan">Javascript</span> <br /> Help with Javascript'];
 var buttonQuestion = ['html', 'css', 'javascript'];
 
 var MakeContent = function(liText, liIdName, buttonId, buttonName) {
@@ -30,7 +30,7 @@ MakeContent.prototype.render = function() {
 
 //function to display two options
 function twoOptions() {
-  var text = ['<span>answers</span> </br> Do you need answers to your questions?</br> HTML, CSS or JavaScript got you down?', '<span>motovation</span> </br> Feeling overwhelmed?</br> Do you need mental support or motovation?'];
+  var text = ['<span class="twoSpan">Experience Points</span> <br /> Do you need answers to your questions?<br /> HTML, CSS or JavaScript got you down?', '<span class="twoSpan">Health Points</span> <br /> Feeling overwhelmed?<br /> Do you need mental support or motovation?'];
   var button = ['left', 'right'];
   var i = 0;
   while (i < 2) {

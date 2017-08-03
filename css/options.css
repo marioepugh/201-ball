@@ -1,8 +1,116 @@
-#listConatiner {
-  width: 900px;
-  height: 300px;
-  margin: auto;
+/*main structure*/
+body {
+  background-image: url('../img/bg2.jpg');
+}
+
+header {
+  width: 960px;
+  margin: 0 auto;
+  border: blue solid 5px;
+}
+
+header img {
+  float: left;
   display: block;
+  width: 100px;
+  padding: 20px;
+}
+
+main {
+  clear: both;
+  text-align: center;
+  margin: 0px auto;
+  width: 900px;
+    margin-top: 30px;
+}
+
+#listConatiner {
+  /*width: 1000px;*/
+  /*height: 300px;*/
+  margin: auto;
+  /*display: block;*/
+padding: 10px;
+
+}
+
+ul {
+  display: inline;
+  border: blue solid 5px;
+}
+
+li {
+  height: 300px;
+  display: inline-block;
+  background: white;
+  border: red solid 2px;
+  border-radius: 10%;
+  text-align: center;
+  padding: 50px 5px 5px 5px;
+  list-style-type: none;
+  font-family: monospace;
+  opacity: 0.8;
+}
+
+#twoOptionId {
+  width: 380px;
+  margin: 0 18px;
+}
+
+#threeOptionId {
+  width: 240px;
+  margin: 0 20px;
+  margin-top: 0px;
+}
+
+/*font design*/
+span {
+  color: red;
+  text-transform: uppercase;
+  line-height: 24px;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 2px 2px #000;
+}
+
+.twoSpan {
+  font-size: 26px;
+}
+
+.threeSpan {
+  font-size: 18px;
+}
+
+header h1 {
+  padding-top: 60px;
+  text-align: center;
+  display: inline-block;
+  border: blue solid 5px;
+  margin-left: 15%;
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  text-shadow: 3px 3px #f00;
+}
+
+/*buttons*/
+button {
+  display: block;
+  background-color: #B73509;
+  margin: auto;
+  width: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 350ms all;
+  padding: 10px 60px;
+}
+
+li button {
+  color: red;
+  position: relative;
+  top: 200px;
+}
+
+.select {
+  background: red;
 }
 
 #backAndSubmitButtons {
@@ -14,58 +122,16 @@
   padding: 10px;
 }
 
-li {
-  height: 300px;
-  display: inline-block;
-  border: black solid 2px;
-  border-radius: 10%;
-  text-align: center;
-  padding-top: 50px;
-
-}
-
-#twoOptionId {
-  width: 400px;
-  margin: 0 18px;
-}
-
-span {
-  color: blue;
-  font-size: 20px;
-  text-transform: uppercase;
-  line-height: 24px;
-}
-
-#threeOptionId {
-  width: 250px;
-  margin: 0 20px;
-}
-
-ul {
-  display: inline;
-}
-
-button {
-  display: block;
-  margin: auto;
-width: 150px;
-}
-
-li button {
-  color: blue;
-  position: relative;
-  top: 200px;
-
-}
-
-.select {
-  background: red;
-}
-
 #back {
   float: left;
 }
 
 #submit {
   float: right;
+}
+
+.clearfix {
+  content: " ";
+  display: block;
+  clear: both;
 }
