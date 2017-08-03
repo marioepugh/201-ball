@@ -76,7 +76,7 @@ function removeButton() {
 };
 
 //event handler waiting for clicks on first two options
-function handleClick(e) {
+function handleClick(event) {
   console.log(event.target.id);
   if (event.target.id === 'right') {
     console.log('clicked');
@@ -85,13 +85,15 @@ function handleClick(e) {
   } else if (event.target.id === 'left') {
     ulEl.innerHTML = ' ';
     threeOptions(textQuestion, buttonQuestion);
+  } else {
+    alert('no!');
   }
 };
 
 //event handler for user secelecting options
 //pushes choices to array
-function select(e) {
-  if (event.target.id !== null) {
+function select(event) {
+  if (buttonQuestion.includes(event.target.id) || buttonMood.includes(event.target.id)) {
     event.target.classList.toggle('select');
     if (event.target.classList.length !== 0) {
       userSelected.push(event.target.id);
@@ -106,11 +108,13 @@ function select(e) {
         }
       }
     }
+  } else {
+      alert('no!');
   }
 };
 
 //event handler for back button
-function handleBackAndSubmitButtons(e) {
+function handleBackAndSubmitButtons(event) {
   if (event.target.id === 'back') {
     console.log('back button from button');
     localStorage.clear();
