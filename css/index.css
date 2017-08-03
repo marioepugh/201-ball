@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
 /*header {
   border: 5px dotted orange;
 }
@@ -55,17 +57,18 @@ main {
   text-align: center;
   margin: 0px auto;
   width: 900px;
-  font-family: 'Bungee Shade', cursive;
+  /*font-family: 'Bungee Shade', cursive;*/
   margin-top: 30px;
 }
 
-main img {
+/*main img {
   width: 500px;
   margin-bottom: 30px;
-}
+}*/
 
 main h2 {
   /*font-family: 'Monoton', cursive;*/
+  /*font-family: 'Open Sans', sans-serif;*/
   font-family: monospace;
   font-size: 30px;
   letter-spacing: 5px;
@@ -83,12 +86,12 @@ form {
   width: 750px;
   font-size: 50px;
   font-family: 'Press Start 2P', cursive;
-  color: #fff;
+  color: #8f8;
   text-shadow: 2px 2px #ff0000;
   /*background: rgba(255,255,255,.5);*/
   /*background: transparent;*/
-  background: rgba(255,255,255,.2);
-  padding:5px;
+  background: rgba(255,255,255,.3);
+  padding: 5px;
   border: none;
   /*border-bottom: 5px dashed red;*/
   text-align: center;
@@ -103,7 +106,7 @@ form {
 }
 
 #userName::placeholder {
-  color: rgba(200, 0, 0, .3);
+  color: #8f8;
   text-shadow: 2px 2px rgba(255, 0, 0, .5);
   text-align: center;
   /*border-bottom: 5px dashed red;
@@ -113,8 +116,9 @@ form {
 
 .button {
   margin-top: 50px;
-  /*font-family: 'Press Start 2P', cursive;*/
-  font-family: 'Bungee Shade', cursive;
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  /*font-family: 'Bungee Shade', cursive;*/
   background-color: #B73509;
   border: none;
   color: white;
