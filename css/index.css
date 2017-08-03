@@ -98,14 +98,16 @@ form {
   /*border: none;*/
   outline: none;
   background: transparent;
+  /*border-bottom: 5px dashed red;
+  padding:5px;*/
 }
 
 #userName::placeholder {
   color: rgba(200, 0, 0, .3);
   text-shadow: 2px 2px rgba(255, 0, 0, .5);
   text-align: center;
-  border-bottom: 5px dashed red;
-  padding:5px;
+  /*border-bottom: 5px dashed red;
+  padding:5px;*/
 
 }
 
