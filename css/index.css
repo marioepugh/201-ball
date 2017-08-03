@@ -1,4 +1,4 @@
-header {
+/*header {
   border: 5px dotted orange;
 }
 main img {
@@ -12,18 +12,28 @@ main h2 {
 }
 .username {
   border: 5px dotted orange;
-}
+}*/
 
 body {
   background-color: #FFFBCC;
 }
 
+header img {
+  float: left;
+  width: 100px;
+  padding: 20px;
+}
+
 header h1 {
+  display: inline-block;
+  margin: 0px auto;
+  width: 1200px;
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   font-family: 'Press Start 2P', cursive;
   /*font-family: 'Bungee Shade', cursive;*/
-  padding: 50px;
+  /*padding: 60px;*/
+  margin-top: 5%;
 }
 
 main {
@@ -36,7 +46,6 @@ main {
 
 main img {
   width: 500px;
-  height: 400px;
   margin-bottom: 30px;
 }
 

@@ -42,6 +42,10 @@
   background: linear-gradient(to bottom right, #808080 0%, #262626 100%);
 }
 
+#black {
+  background: linear-gradient(to bottom right, #000000 0%, #262626 100%);
+}
+
 .ball {
   width: 200px;
   height: 200px;
@@ -60,5 +64,17 @@
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
-  
+}
+
+ul {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+ul li {
+  display: inline-block;
+  padding: 30px 40px;
+  width: auto;
+  text-align: center;
 }
