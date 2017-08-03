@@ -14,26 +14,41 @@ main h2 {
   border: 5px dotted orange;
 }*/
 
+* {
+  /*box-sizing: border-box;
+  outline: 1px dashed red;*/
+}
+
 body {
-  background-color: #FFFBCC;
+  /*background-color: #FFFBCC;*/
+  background-image: url('../img/bg1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: cover;
+}
+
+header {
+  width: 960px;
+  margin: 0 auto;
 }
 
 header img {
   float: left;
+  display: block;
   width: 100px;
   padding: 20px;
 }
 
 header h1 {
-  display: inline-block;
-  margin: 0px auto;
-  width: 1200px;
+  /*float: left;*/
+  /*display: inline-block;*/
+  padding-top: 60px;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Press Start 2P', cursive;
-  /*font-family: 'Bungee Shade', cursive;*/
-  /*padding: 60px;*/
-  margin-top: 5%;
+  color: #fff;
+  text-shadow: 3px 3px #f00;
 }
 
 main {
@@ -51,11 +66,12 @@ main img {
 
 main h2 {
   /*font-family: 'Monoton', cursive;*/
-  font-family: 'Faster One', cursive;
+  font-family: monospace;
   font-size: 30px;
   letter-spacing: 5px;
   line-height: 1.5em;
-  color: #110F00
+  color: #fff;
+  text-shadow: 3px 3px #f00;
 }
 
 form {
@@ -67,7 +83,30 @@ form {
   width: 750px;
   font-size: 50px;
   font-family: 'Press Start 2P', cursive;
-  color: #4381A8;
+  color: #fff;
+  text-shadow: 2px 2px #ff0000;
+  /*background: rgba(255,255,255,.5);*/
+  /*background: transparent;*/
+  background: rgba(255,255,255,.2);
+  padding:5px;
+  border: none;
+  border-bottom: 5px dashed red;
+  text-align: center;
+}
+
+#userName:focus {
+  /*border: none;*/
+  outline: none;
+  background: transparent;
+}
+
+#userName::placeholder {
+  color: rgba(200, 0, 0, .3);
+  text-shadow: 2px 2px rgba(255, 0, 0, .5);
+  text-align: center;
+  border-bottom: 5px dashed red;
+  padding:5px;
+
 }
 
 .button {
