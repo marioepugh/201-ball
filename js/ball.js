@@ -50,7 +50,7 @@ var ball = {
       'Fixed positioning stays in place when page is scrolled',
       'CSS font-size: the text size to be used'
     ],
-    js: [
+    javascript: [
       'Are you calling your variables',
       'Check your spelling',
       'JavaScript programs the behavior of web pages',
@@ -142,6 +142,7 @@ var ball = {
       'Remove any code that isn\'t being used',
       'Don\'t repeat yourself'
     ]
-
   }
 };
+
+ball;

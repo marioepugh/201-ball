@@ -1,16 +1,20 @@
 'use strict';
 
+
+
+
 var ballContainer = document.getElementById('ballOuter');
 var ballContent = document.getElementById('ballContent');
 var finalGreetingP = document.getElementById('finalGreeting');
 // Hey Ron, here is the Survival Ball that you created. It will give you answers/motivation regarding HTMl and Javascript.
 
+
 var answers = ball.answers;
-var picked = ['traditional', 'js', 'css'];
+var picked = JSON.parse(localStorage.storedUserSelected);
 var filtered = [];
-var userName = 'SpaceNeedle';
+var userName = JSON.parse(localStorage.storedUserName);
 var optionSelected = '';
-var ballColor = '#db2fda';
+var ballColor = JSON.parse(localStorage.userColor);
 
 
 picked.forEach(function(item) {
