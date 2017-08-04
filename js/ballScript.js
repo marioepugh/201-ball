@@ -55,20 +55,42 @@ for (var i = 0; i < picked.length; i++) {
   }
 }
 
-
-
 var randomNumber = function(num) {
   return Math.floor(Math.random() * num);
 };
 
-var changeQuote = function() {
-  ballContent.textContent = combinedAnswers[randomNumber(combinedAnswers.length)];
+
+var fadeIn = function() {
+  var i = 0;
+  var fadeTime = setInterval(function() {
+    if (i >= 100) {
+      clearInterval(fadeTime);
+    }
+    ballContent.style.opacity = i / 100;
+    i += 1;
+    console.log(i);
+
+  }, 5);
 };
+
+var removeQuote = function() {
+  ballContent.style.opacity = 0;
+  ballContent.textContent = '';
+};
+
+var changeQuote = function() {
+  ballContent.style.opacity = 0;
+  ballContent.textContent = combinedAnswers[randomNumber(combinedAnswers.length)];
+  fadeIn();
+};
+
 
 ballContainer.style.backgroundColor = ballColor;
 
 
 finalGreetingP.textContent = 'Hey ' + userName + ', here is the Survival Ball that you created. It will give you ' + optionSelected + ' phrases.';
-changeQuote();
+// changeQuote();
 
-ballContainer.addEventListener('mouseover', changeQuote);
+
+ballContainer.addEventListener('mouseout', changeQuote);
+ballContainer.addEventListener('mouseover', removeQuote);
