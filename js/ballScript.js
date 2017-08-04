@@ -89,8 +89,9 @@ ballContainer.style.backgroundColor = ballColor;
 
 
 finalGreetingP.textContent = 'Hey ' + userName + ', here is the Survival Ball that you created. It will give you ' + optionSelected + ' phrases.';
-// changeQuote();
 
 
+
+changeQuote();
 ballContainer.addEventListener('mouseout', changeQuote);
 ballContainer.addEventListener('mouseover', removeQuote);
