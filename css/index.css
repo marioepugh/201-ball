@@ -135,3 +135,25 @@ form {
 .button:hover {
   background: #C7A943;
 }
+
+.button2 {
+  margin-top: 10px;
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+  /*font-family: 'Bungee Shade', cursive;*/
+  background-color: #B73509;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 350ms all;
+}
+
+.button2:hover {
+  background: #C7A943;
+}

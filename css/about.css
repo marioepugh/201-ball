@@ -12,41 +12,35 @@ body {
   background-image: url('../img/bg2.jpg');
 }
 
-.button {
-  margin-top: 50px;
-  font-family: 'Press Start 2P', cursive;
-  text-transform: uppercase;
-  /*font-family: 'Bungee Shade', cursive;*/
-  background-color: #B73509;
-  border: none;
-  color: white;
-  padding: 30px 60px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 350ms all;
-}
-
-.button:hover {
-  background: #C7A943;
-}
-
-header section {
-  max-width: 960px;
+header {
+  width: 960px;
   margin: 0 auto;
 }
 
-h1 {
-  margin-top: 10px;
-  font-size: 2.3em;
-  text-align: center;
+header img {
+  float: left;
+  display: block;
+  width: 100px;
+  padding: 20px;
 }
 
-header a {
-  margin: 20px;
+header h1 {
+  /*float: left;*/
+  /*display: inline-block;*/
+  padding-top: 60px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  text-shadow: 3px 3px #f00;
+}
+
+main {
+  text-align: center;
+  margin: 0px auto;
+  width: 900px;
+  /*font-family: 'Bungee Shade', cursive;*/
+  margin-top: 30px;
 }
 
 #team {
@@ -56,6 +50,7 @@ header a {
 
 #team li {
   display: inline-block;
+  font-family: monospace;
   /*float: left;*/
   width: 40%;
   margin: 4.0%;
