@@ -2,12 +2,7 @@
 ***ABOUT***
 **********/
 
-
-
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
-
-
-
 body {
   background-image: url('../img/bg2.jpg');
 }
@@ -46,12 +41,14 @@ main {
 #team {
   max-width: 960px;
   margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #team li {
-  display: inline-block;
+
   font-family: monospace;
-  /*float: left;*/
+
   width: 40%;
   margin: 4.0%;
 }
@@ -61,13 +58,12 @@ main {
 }
 
 #team img {
-  width: 100%;
+  width: 60%;
   border-radius: 100%;
-
 }
 
 #team p {
-  line-height: 1.5em;
+  line-height: 1.9em;
   text-indent: 20px;
 }
 
