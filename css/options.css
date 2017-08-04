@@ -34,11 +34,13 @@ padding: 10px;
 
 ul {
   display: inline;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 li {
   height: 300px;
-  display: inline-block;
+  float: left;
   background: white;
   border: red solid 2px;
   border-radius: 10%;
@@ -50,6 +52,9 @@ li {
   position: relative;
 }
 
+li img {
+  height: 200px;
+}
 #twoOptionId {
   width: 380px;
   margin: 0 18px;
@@ -65,9 +70,11 @@ li {
 span {
   color: red;
   text-transform: uppercase;
+  display: block;
   line-height: 24px;
   font-family: 'Press Start 2P', cursive;
   text-shadow: 2px 2px #000;
+  padding-bottom: 10px;
 }
 
 .twoSpan {
@@ -114,7 +121,7 @@ li button {
   left: 115px;
 }
 
-#reccomendation, #motivation, #traditional {
+#reccomendations, #motivation, #jokes, #html, #css, #javascript {
   left: 60px;
 }
 
@@ -122,6 +129,7 @@ li button {
   background: #8f8;
   color: black;
 }
+
 #backAndSubmitButtons {
   width: 880px;
   height: 50px;
