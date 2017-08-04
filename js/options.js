@@ -5,7 +5,7 @@ var ulEl = document.getElementById('listContainer');
 var buttonContainer = document.getElementById('backAndSubmitButtons');
 var userSelected = [];
 
-var textMood = ['<span class="threeSpan">Recommendations</span> <br /> Get some motivation', '<span class="threeSpan">Motivation</span> <br /> mood 2', '<span class="threeSpan">Coding Jokes</span> <br /> Traditional 8 Ball yes or no answers'];
+var textMood = ['<span class="threeSpan">Recommendations</span> <br /> For technical issues or when your code isn\'t working', '<span class="threeSpan">Motivation</span> <br /> Quotes to help you stay optimistic along your journey', '<span class="threeSpan">Coding Jokes</span> <br /> When you could use a good laugh'];
 var buttonMood = ['recommendations', 'motivation', 'jokes'];
 
 var textQuestion = ['<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/240px-HTML5_logo_and_wordmark.svg.png"/>', ' <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/200px-CSS3_logo_and_wordmark.svg.png"/>', '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/200px-Unofficial_JavaScript_logo_2.svg.png"/>'];
@@ -32,7 +32,7 @@ MakeContent.prototype.render = function() {
 
 //function to display two options
 function twoOptions() {
-  var text = ['<span class="twoSpan">Experience Points</span> <br /> Do you need answers to your questions?<br /> HTML, CSS or JavaScript got you down?', '<span class="twoSpan">Health Points</span> <br /> Feeling overwhelmed?<br /> Do you need mental support or motovation?'];
+  var text = ['<span class="twoSpan">Experience Points</span> <br /> Break out of tunnel vision to help you change the way you\'re looking at your problem<br />', '<span class="twoSpan">Health Points</span> <br /> Feeling overwhelmed?<br /> Take a minute to step back and relax. <br /> We promise, your code will still be there'];
   var button = ['left', 'right'];
   var i = 0;
   while (i < 2) {
