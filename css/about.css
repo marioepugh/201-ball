@@ -7,6 +7,10 @@ body {
   background-image: url('../img/bg2.jpg');
 }
 
+* {
+  color: #fff;
+}
+
 header {
   width: 960px;
   margin: 0 auto;
