@@ -88,7 +88,7 @@ function handleClick(event) {
     ulEl.innerHTML = ' ';
     threeOptions(textQuestion, buttonQuestion);
   } else {
-    alert('Please select an option!');
+    console.log('Please select an option!');
   }
 };
 
@@ -111,7 +111,7 @@ function select(event) {
       }
     }
   } else {
-      alert('Please select an option!');
+      console.log('Please select an option!');
   }
 };
 
