@@ -1,4 +1,5 @@
 /*main structure*/
+
 body {
   background-image: url('../img/bg2.jpg');
 }
@@ -20,7 +21,7 @@ main {
   text-align: center;
   margin: 0px auto;
   width: 900px;
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 #listConatiner {
@@ -28,8 +29,7 @@ main {
   /*height: 300px;*/
   margin: auto;
   /*display: block;*/
-padding: 10px;
-
+  padding: 10px;
 }
 
 ul {
@@ -55,6 +55,7 @@ li {
 li img {
   height: 200px;
 }
+
 #twoOptionId {
   width: 380px;
   margin: 0 18px;
@@ -66,7 +67,9 @@ li img {
   margin-top: 0px;
 }
 
+
 /*font design*/
+
 span {
   color: red;
   text-transform: uppercase;
@@ -96,7 +99,9 @@ header h1 {
   text-shadow: 3px 3px #f00;
 }
 
+
 /*buttons*/
+
 button {
   display: block;
   background-color: #B73509;
@@ -130,6 +135,7 @@ li button {
   color: black;
 }
 
+
 #backAndSubmitButtons {
   width: 880px;
   height: 50px;
@@ -139,9 +145,8 @@ li button {
   padding: 10px;
 }
 
-#traditionalButton {
+#traditionalButton {}
 
-}
 #back {
   float: left;
 }
