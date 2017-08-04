@@ -1,12 +1,12 @@
 /**********
 ***ABOUT***
 **********/
+
+
+
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
-* {
-  /*outline: 1px dashed red*/
-  color: white;
-}
+
 
 body {
   background-image: url('../img/bg2.jpg');
