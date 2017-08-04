@@ -16,13 +16,13 @@ var optionSelected = '';
 if (localStorage.storedUserSelected) {
   var picked = JSON.parse(localStorage.storedUserSelected);
 } else {
-  picked = 'motivational';
+  picked = 'jokes';
 }
 
 if (localStorage.storedUserName) {
   var userName = JSON.parse(localStorage.storedUserName);
 } else {
-  userName = '';
+  userName = 'User';
 }
 
 if (localStorage.userColor) {
