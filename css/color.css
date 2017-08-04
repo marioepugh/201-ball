@@ -107,6 +107,7 @@ ul li {
 }
 
 .button {
+  float: right;
   margin-top: 50px;
   font-family: 'Press Start 2P', cursive;
   text-transform: uppercase;
